@@ -125,6 +125,7 @@ export const DATA = {
       href: "#",
       dates: "May 2021 - May 2022",
       active: false,
+      category: "web",
       description:
         "Developed Clippy.AI, an advanced platform that maximizes YouTube video engagement by summarizing content and enabling interactive Q&A using state-of-the-art AI technology.",
       technologies: [
@@ -139,36 +140,35 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/naigggs/clippy-web",
-        //   icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
       video: "#",
     },
     {
-        title: "Delivio",
-        href: "",
-        dates: "April 2024 - July 2024",
-        active: true,
-        description:
-          "Developed a freelance platform tailored for truck drivers, facilitating connections with fellow drivers and clients, sharing experiences, and fostering a strong community.",
-        technologies: [
-          "React.js",
-          "NextJS",
-          "PostgreSQL",
-          "Supbase",
-          "Shadcn UI",
-          "TailwindCSS",
-        ],
-        links: [
-          {
-            type: "Source",
-            href: "https://github.com/naigggs/delivio-web",
-          //   icon: <Icons.github className="size-3" />,
-          },
-        ],
-        image: "",
-        video: "#",
+      title: "Delivio",
+      href: "",
+      dates: "April 2024 - July 2024",
+      active: true,
+      category: "web",
+      description:
+        "Developed a freelance platform tailored for truck drivers, facilitating connections with fellow drivers and clients, sharing experiences, and fostering a strong community.",
+      technologies: [
+        "React.js",
+        "NextJS",
+        "PostgreSQL",
+        "Supbase",
+        "Shadcn UI",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/delivio-web",
+        },
+      ],
+      image: "",
+      video: "#",
     },
 
     {
@@ -176,6 +176,7 @@ export const DATA = {
       href: "#",
       dates: "July 2024 - October 2024",
       active: false,
+      category: "web",
       description:
         "A web application designed to connect construction workers with freelance opportunities, enabling them to showcase their skills and find work in their local area.",
       technologies: ["Django", "Python", "DBSqlite", "TailwindCSS"],
@@ -183,7 +184,6 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/naigggs/whiteboard-web",
-        //   icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
@@ -192,6 +192,34 @@ export const DATA = {
     {
       title: "HAU2Park",
       href: "",
+      dates: "November 2024 - March 2025",
+      active: true,
+      category: "web",
+      description:
+        "A web application that simplifies parking at HAU by providing real-time parking availability, allowing users to reserve spots in advance and receive notifications when their spot is ready.",
+      technologies: [
+        "React.js",
+        "NextJS",
+        "PostgreSQL",
+        "Supbase",
+        "Shadcn UI",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/hau2park.web",
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+  ],
+  projectspage: [
+    {
+      title: "HAU2Park",
+      href: "/projects/hau2park",
+      category: "web",
       dates: "November 2024 - March 2025",
       active: true,
       description:
@@ -208,7 +236,129 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/naigggs/hau2park.web",
-        //   icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+    {
+      title: "Classification of Mushroom",
+      href: "/projects/hau2park",
+      category: "data",
+      dates: "July 2024 - October 2024",
+      active: true,
+      description:
+        "This project focuses on developing a binary classification model to accurately predict whether a mushroom is edible or poisonous based on a given dataset. The goal is to create a reliable model that can assist in identifying potentially harmful mushrooms.",
+      technologies: ["Numpy", "Python", "XGBoost", "Model"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/hau2park.web",
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+    {
+      title: "Konstrakt",
+      href: "/projects/konstrakt",
+      category: "web",
+      dates: "July 2024 - October 2024",
+      active: false,
+      description:
+        "A web application designed to connect construction workers with freelance opportunities, enabling them to showcase their skills and find work in their local area.",
+      technologies: ["Django", "Python", "DBSqlite", "TailwindCSS"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/whiteboard-web",
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+    {
+      title: "Delivio",
+      href: "/projects/delivio",
+      dates: "April 2024 - July 2024",
+      category: "web",
+      active: true,
+      description:
+        "Developed a freelance platform tailored for truck drivers, facilitating connections with fellow drivers and clients, sharing experiences, and fostering a strong community.",
+      technologies: [
+        "React.js",
+        "NextJS",
+        "PostgreSQL",
+        "Supbase",
+        "Shadcn UI",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/delivio-web",
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+    {
+      title: "Clippy.AI",
+      href: "/projects/clippy-ai",
+      dates: "July 2023 - November 2024",
+      category: "web",
+      active: false,
+      description:
+        "Developed Clippy.AI, an advanced platform that maximizes YouTube video engagement by summarizing content and enabling interactive Q&A using state-of-the-art AI technology.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Django",
+        "Python",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/clippy-web",
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+
+    {
+      title: "Netflix Clone",
+      href: "/projects/hau2park",
+      category: "web",
+      dates: "November 2022 - March 2023",
+      active: true,
+      description:
+        "A web application that simplifies parking at HAU by providing real-time parking availability, allowing users to reserve spots in advance and receive notifications when their spot is ready.",
+      technologies: ["React.js", "DBSQLite", "Django", "TailwindCSS"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/hau2park.web",
+        },
+      ],
+      image: "",
+      video: "#",
+    },
+    {
+      title: "Whiteboard LMS",
+      href: "/projects/hau2park",
+      category: "web",
+      dates: "July 2022 - November 2022",
+      active: true,
+      description:
+        "Whiteboard is a learning management system (LMS) built using the Django web framework. An LMS is a software application designed to help educators manage, deliver, and track course content and student learning. ",
+      technologies: ["Django", "Python", "DBSQLite", "TailwindCSS"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/naigggs/hau2park.web",
         },
       ],
       image: "",

@@ -1,3 +1,5 @@
+'use client'
+
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/app/data/data";
@@ -6,12 +8,47 @@ import { ProjectCard } from "@/components/project-card";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const fadeUpVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+      filter: 'blur(10px)'
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      filter: 'blur(0px)',
+      transition: {
+        duration: 0.5,
+        ease: 'easeOut'
+      }
+    }
+  };
+
+  const staggerContainer = {
+    visible: {
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
   return (
     <div className="container mx-auto px-6 py-20">
-      <div className="mx-auto w-full max-w-2xl space-y-8">
-        <section id="hero">
+      <motion.div 
+        className="mx-auto w-full max-w-2xl space-y-8"
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.section
+          id="hero"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -32,8 +69,12 @@ export default function Home() {
               </Avatar>
             </div>
           </div>
-        </section>
-        <section id="about">
+        </motion.section>
+        <motion.section
+          id="about"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <h2 className="text-xl font-bold">About</h2>
           <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             Dedicated web developer with a focus on building dynamic and
@@ -42,8 +83,12 @@ export default function Home() {
             a strong understanding of application logic and data flow, I strive
             to deliver exceptional web experiences.
           </div>
-        </section>
-        <section id="skills">
+        </motion.section>
+        <motion.section
+          id="skills"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="flex min-h-0 flex-col gap-y-3">
             <h2 className="text-xl font-bold">Skills</h2>
             <div className="flex flex-wrap gap-1">
@@ -52,8 +97,12 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
-        <section id="work">
+        </motion.section>
+        <motion.section
+          id="work"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="flex min-h-0 flex-col gap-y-3">
             <h2 className="text-xl font-bold">Work Experience</h2>
             {DATA.work.map((work, id) => (
@@ -70,8 +119,12 @@ export default function Home() {
               />
             ))}
           </div>
-        </section>
-        <section id="education">
+        </motion.section>
+        <motion.section
+          id="education"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="flex min-h-0 flex-col gap-y-3">
             <h2 className="text-xl font-bold">Education</h2>
 
@@ -87,8 +140,12 @@ export default function Home() {
               />
             ))}
           </div>
-        </section>
-        <section id="projects">
+        </motion.section>
+        <motion.section
+          id="projects"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="space-y-12 w-full py-5">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -118,8 +175,12 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
-        <section id="contact">
+        </motion.section>
+        <motion.section
+          id="contact"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-5">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -138,8 +199,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-        <section id="end-buttons">
+        </motion.section>
+        <motion.section
+          id="end-buttons"
+          variants={fadeUpVariants}
+          viewport={{ once: true }}
+        >
           <div className="flex justify-between items-center w-full mt-16">
             <Button variant="outline" disabled>
               <Link href="/" className="flex items-center gap-2">
@@ -154,8 +219,8 @@ export default function Home() {
               </Link>
             </Button>
           </div>
-        </section>
-      </div>
+        </motion.section>
+      </motion.div>
     </div>
   );
 }

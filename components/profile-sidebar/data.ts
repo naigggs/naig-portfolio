@@ -33,44 +33,44 @@ export const data = {
   projects: [
     {
       title: "Web Development",
-      url: "/web-development",
+      url: "/projects",
       icon: Globe,
       isActive: true,
       items: [
         {
           title: "Clippy.AI",
-          url: "/web-development/clippy-ai",
+          url: "/projects/clippy-ai",
         },
         {
           title: "Delivio",
-          url: "/web-development/delivio",
+          url: "/projects/delivio",
         },
         {
           title: "Konstrakt",
-          url: "/web-development/konstrakt",
+          url: "/projects/konstrakt",
         },
         {
           title: "HAU2Park",
-          url: "/web-development/hau2park",
+          url: "/projects/hau2park",
         },
         {
           title: "Netflix Clone",
-          url: "/web-development/netflix-clone",
+          url: "/projects/netflix-clone",
         },
         {
           title: "Whiteboard LMS",
-          url: "/web-development/whiteboard-lms",
+          url: "/projects/whiteboard-lms",
         },
       ],
     },
     {
       title: "Data Science",
-      url: "/data-science",
+      url: "/projects",
       icon: SquareTerminal,
       items: [
         {
           title: "Mushroom Classification",
-          url: "/data-science/mushroom-classification",
+          url: "/projects/mushroom-classification",
         },
       ],
     },
@@ -92,12 +92,12 @@ export const data = {
   socials: [
     {
       name: "Github",
-      url: "#",
+      url: "https://github.com/naigggs",
       icon: Github,
     },
     {
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/gian-cabigting-3547bb267/",
       icon: Linkedin,
     },
   ],
