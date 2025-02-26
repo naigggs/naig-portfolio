@@ -30,12 +30,16 @@ export default function Header() {
   const pageTitle = pageTitles[pathname] || "Unknown Page";
 
   return (
-    <header className="flex h-16 shrink-0 items-center justify-between border-b px-4">
+    <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+      <SidebarTrigger className="-ml-1" />
+      <Separator orientation="vertical" className="mr-2 h-4" />
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
             <Link href={pathname}>
-              <BreadcrumbPage className="text-gray-500 hover:text-foreground">{pageTitle}</BreadcrumbPage>
+              <BreadcrumbPage className="text-gray-500 hover:text-foreground">
+                {pageTitle}
+              </BreadcrumbPage>
             </Link>
           </BreadcrumbItem>
         </BreadcrumbList>
