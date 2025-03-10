@@ -243,7 +243,7 @@ export const DATA = {
     },
     {
       title: "Classification of Mushroom",
-      href: "/projects/hau2park",
+      href: "/projects/classification-of-mushroom",
       category: "data",
       dates: "July 2024 - October 2024",
       active: true,

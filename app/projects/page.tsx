@@ -1,20 +1,8 @@
 'use client'
 
-import { ArrowUpRight, Github } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { DATA } from "@/app/data/data";
 import { ProjectCard } from "@/components/project-card";
 import { ProjectFilter } from "@/components/project-filter";

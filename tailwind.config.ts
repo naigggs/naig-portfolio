@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        arsenal: ['Arsenal SC', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
